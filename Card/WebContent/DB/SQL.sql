@@ -1,13 +1,13 @@
 create database Portfolio;
 
-create table Card_company( 
+create table Card_company(
 	card_company varchar(100) not null primary key,  
 	card_name varchar(100) not null,                
 	card_category varchar(100) not null,             
 );
 
 
-create table Card( // 카드
+create table Card(
 	card_number int auto_increment primary key, 
 	card_name varchar(100) not null,             
 	card_company varchar(100) not null,          
@@ -19,7 +19,7 @@ create table Card( // 카드
 );
 
 
-create table Bulletin_board( 
+create table Bulletin_board(
 	board_num int not null primary key, 
 	card_name varchar(100) not null,     
 	review varchar(1000) not null,      
@@ -29,14 +29,14 @@ create table Bulletin_board(
 
 create table card.member(
 
-member_point int not null,
-member_id varchar(50) not null , 
-member_password varchar(40) not null,
-member_name varchar(3000) not null,
-member_resdentnum int primary key AUTO_INCREMENT,
-member_sex varchar(40) not null,
-member_birth varchar(100) not null,
-member_phone int not null
+	member_point int not null,
+	member_id varchar(50) not null , 
+	member_password varchar(40) not null,
+	member_name varchar(3000) not null,
+	member_resdentnum int primary key AUTO_INCREMENT,
+	member_sex varchar(40) not null,
+	member_birth varchar(100) not null,
+	member_phone int not null
 
 /*member_cardcompany varchar(600) not null,
 member_cardbenefit varchar(600) not null,
@@ -48,8 +48,8 @@ member_cardtype varchar (600) not null*/
 
 create table card.interest(
 
-interest_num int primary key AUTO_INCREMENT,
-member_name varchar(50) not null , 
-card_card varchar(50) not null 
+	interest_num int primary key AUTO_INCREMENT,
+	member_name varchar(50) not null , 
+	card_card varchar(50) not null 
 
 )
