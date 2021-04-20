@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 
-<link rel="stylesheet" type="text/css" href="../Main_css/index.css">
+<link rel="stylesheet" type="text/css" href="../Main_css/section.css">
 
 </head>
 <body>
@@ -28,6 +28,8 @@
 <div id="section_3">
 	
 </div>
+
+<%@include file="footer.jsp" %>
 
 </body>
 </html>

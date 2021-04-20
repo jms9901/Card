@@ -23,11 +23,11 @@
 	
 		<div id="nav_img">
 			<img alt="" src="">
-			<p>(이미지/이미지링크)</p>
+			<p id="nav_img_p">(이미지/이미지링크)</p>
 		</div>
 	
 		<div class="dropdown1">
-			<button class="dropbtn">차트⌄</button>
+			<button id="dropbtn1">차트⌄</button>
 				<div class="dropdown-content">
 					<a href="#">1_테스트1</a>
 					<a href="#">1_테스트2</a>
@@ -37,7 +37,7 @@
 		</div>
 		
 		<div class="dropdown2">
-			<button class="dropbtn">검색/비교⌄</button>
+			<button id="dropbtn2">검색/비교⌄</button>
 				<div class="dropdown-content">
 					<a href="#">2_테스트1</a>
 					<a href="#">2_테스트2</a>
@@ -47,15 +47,15 @@
 		</div>
 		
 		<div id="nav_item1">
-			<a href="#">카드사</a>
+			<a href="#" id="nav_item1_a">카드사</a>
 		</div>
 		
 		<div id="nav_item2">
-			<a href="#">콘텐츠</a>
+			<a href="#" id="nav_item2_a">콘텐츠</a>
 		</div>
 		
 		<div id="nav_item3">
-			<a href="#">추천</a>
+			<a href="#" id="nav_item3_a">추천</a>
 		</div>
 		
 		<div id="nav_item4">
@@ -67,6 +67,32 @@
 		</div>
 		
 </div>
+
+<script type="text/javascript">
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+	if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
+	    document.getElementById("nav").style.padding = "0;";
+	    document.getElementById("nav_img_p").style.fontSize = "20px";
+	    document.getElementById("dropbtn1").style.fontSize = "16px";
+	    document.getElementById("dropbtn2").style.fontSize = "16px";
+	    document.getElementById("nav_item1_a").style.fontSize = "16px";
+	    document.getElementById("nav_item2_a").style.fontSize = "16px";
+	    document.getElementById("nav_item3_a").style.fontSize = "16px";
+	  } else {
+	    document.getElementById("nav").style.padding = "20px 5px 30px 5px";
+	    document.getElementById("nav_img_p").style.fontSize = "25px";
+	    document.getElementById("dropbtn1").style.fontSize = "20px";
+	    document.getElementById("dropbtn2").style.fontSize = "20px";
+	    document.getElementById("nav_item1_a").style.fontSize = "20px";
+	    document.getElementById("nav_item2_a").style.fontSize = "20px";
+	    document.getElementById("nav_item3_a").style.fontSize = "20px";
+	  }
+}
+
+</script>
 
 </body>
 </html>
