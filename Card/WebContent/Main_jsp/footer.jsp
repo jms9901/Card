@@ -43,7 +43,7 @@
 	
 		<div id="footer_ul">
 			<ul>
-				<li><a href="#"><img alt="" src="../images/youtube.png" width="75px" height="40px"></a></li>
+				<li><a href="#"><img alt="" src="../images/youtube.png" width="50px" height="42px"></a></li>
 				<li><a href="#"><img alt="" src="../images/naver.png" width="45px" height="40px"></a></li>
 				<li><a href="#"><img alt="" src="../images/insta.jpeg" width="40px" height="40px"></a></li>
 				<li><a href="#"><img alt="" src="../images/kakao.png" width="40px" height="40px"></a></li>
@@ -75,7 +75,7 @@
 	
 	<div id="footer_6">
 		<div id="footer_p5">
-			<p>Copyright © 2010-2021 메가IT All Rights Reserved.</p>
+			<p>Copyright &copy; 2010-2021 메가IT All Rights Reserved.</p>
 		</div>
 	</div>
 	
