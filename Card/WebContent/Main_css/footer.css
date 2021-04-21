@@ -47,18 +47,15 @@ input[type=submit] {
 #footer_2 {
 	width: 100%;
 	margin: 0 auto;
-	border: solid 1px lightgray;
 }
 
 #footer_2 #footer_img {
 	text-align: center;
-	border: solid 1px lightgray;
 	margin: 80px 0;
 }
 
 #footer_3 {
 	width: 100%;
-	border: solid 1px lightgray;
 }
 
 #footer_ul {
@@ -68,7 +65,7 @@ input[type=submit] {
 #footer_ul ul li{
 	display: inline-block;
 	/*border: solid 1px lightgray;*/
-	margin: 25px 20px;
+	margin: 25px 15px;
 }
 
 #footer_4 {
@@ -76,20 +73,18 @@ input[type=submit] {
 }
 
 #footer_4 #footer_a {
-	border: solid 1px lightgray;
 	text-align: center;
 	padding: 10px 0;
 }
 
 #footer_4 #footer_a a {
-	border: solid 1px lightgray;
 	text-decoration: none;
 	font-weight: bold;
 	color: black;
 	margin: 0 15px;
 }
 
-#footer_4 #footer_a a:hover {
+#footer_4 #footer_a .a_hover:hover {
 	color: #EF595D;
 }
 
@@ -102,14 +97,12 @@ input[type=submit] {
 }
 
 #footer_5 #footer_p4 {
-	border: solid 1px lightgray;
 	text-align: center;
 	padding: 10px 0;
 }
 
 #footer_5 #footer_p4 p {
 	display: inline-block;
-	border: solid 1px lightgray;
 	font-size: 12px;
 	margin-right: 25px;
 	color: gray;
@@ -120,14 +113,12 @@ input[type=submit] {
 }
 
 #footer_6 #footer_p5 {
-	border: solid 1px lightgray;
 	text-align: center;
 	padding: 10px 0;
 }
 
 #footer_6 #footer_p5 p {
 	display: inline-block;
-	border: solid 1px lightgray;
 	font-size: 12px;
 	margin-right: 25px;
 	color: gray;

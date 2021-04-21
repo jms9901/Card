@@ -74,7 +74,7 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
 	if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
-	    document.getElementById("nav").style.padding = "0;";
+	    //document.getElementById("nav").style.padding = "0;";
 	    document.getElementById("nav_img_p").style.fontSize = "20px";
 	    document.getElementById("dropbtn1").style.fontSize = "16px";
 	    document.getElementById("dropbtn2").style.fontSize = "16px";
@@ -82,7 +82,7 @@ function scrollFunction() {
 	    document.getElementById("nav_item2_a").style.fontSize = "16px";
 	    document.getElementById("nav_item3_a").style.fontSize = "16px";
 	  } else {
-	    document.getElementById("nav").style.padding = "20px 5px 30px 5px";
+	    document.getElementById("nav").style.padding = "10px 5px 30px 5px";
 	    document.getElementById("nav_img_p").style.fontSize = "25px";
 	    document.getElementById("dropbtn1").style.fontSize = "20px";
 	    document.getElementById("dropbtn2").style.fontSize = "20px";

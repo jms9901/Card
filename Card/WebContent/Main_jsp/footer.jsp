@@ -43,10 +43,10 @@
 	
 		<div id="footer_ul">
 			<ul>
-				<li><a href="#"><img alt="" src="../images/youtube.png" width="80px" height="40px"></a></li>
-				<li><a href="#"><img alt="" src="../images/naver.png" width="50px" height="40px"></a></li>
-				<li><a href="#"><img alt="" src="../images/insta.jpeg" width="50px" height="40px"></a></li>
-				<li><a href="#"><img alt="" src="../images/kakao.png" width="50px" height="40px"></a></li>
+				<li><a href="#"><img alt="" src="../images/youtube.png" width="75px" height="40px"></a></li>
+				<li><a href="#"><img alt="" src="../images/naver.png" width="45px" height="40px"></a></li>
+				<li><a href="#"><img alt="" src="../images/insta.jpeg" width="40px" height="40px"></a></li>
+				<li><a href="#"><img alt="" src="../images/kakao.png" width="40px" height="40px"></a></li>
 			</ul>
 		</div>
 	
@@ -55,11 +55,11 @@
 	<div id="footer_4">
 		
 		<div id="footer_a">
-			<a href="#">ABOUT</a>
-			<a href="#">SERVICE</a>
-			<a href="#">CONTACT</a>
-			<a href="#">CARDTEST</a>
-			<a href="#">PRESTIGETEST</a>
+			<a href="#" class="a_hover">ABOUT</a>
+			<a href="#" class="a_hover">SERVICE</a>
+			<a href="#" class="a_hover">CONTACT</a>
+			<a href="#" class="a_hover">CARDTEST</a>
+			<a href="#" class="a_hover">PRESTIGETEST</a>
 		</div>
 		
 	</div>
