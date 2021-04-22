@@ -68,9 +68,9 @@ letter-spacing:1px;}
 .btn-outline-primary:hover{
 background-color:pink;
 }
-.login-btm{float: center; margin-top: 10px;}
+.login-btm{float: left; margin-top: 10px;}
 .login-button{ margin-bottom: 30px; text-align: right; color:pink;}
-.login-text{  font-weight:bold; color: pink;}
+.login-text{  text-align: left; font-weight:bold; color: pink;}
 </style>
 </head>
 <body>
