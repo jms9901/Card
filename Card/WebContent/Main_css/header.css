@@ -5,30 +5,9 @@
 	padding: 0;
 }
 
-#header {
-	width: 100%;
-}
-
-#header_top {
-	width: 100%;
-	height: 35px;
-	background-color: black;
-	text-align: center;
-}
-
-#header_top p {
-	padding-top: 10px;
-}
-
-#header_top p a {
-	text-decoration: none;
-	font-size: 14px;
-	color: white;
-}
-
 #nav {
 	width: auto; /* width: 100%; */
-	background-color: #373948;
+	background-color: white;
 	position: sticky; /* 중요 */
 	/*left: 0; /* 중요 */
 	/*right: 0; /* 중요 */
@@ -47,15 +26,21 @@
 	유일한 자식요소라고 하더라도 부모요소가 충분한 height를 가지고 있다면, 그 범위내에서 동작함.
 */
 
-#nav #nav_img {
+#nav #nav_logo {
 	position: relative;
 	display: inline-block;
 }
 
-#nav #nav_img p {
-	color: #B9BBC7;
-	font-size: 25px;
+#nav #nav_logo p {
+	color: black;
+	font-size: 24px;
 	transition: 0.4s;
+}
+
+#nav #nav_logo p a {
+	text-decoration: none;
+	color: #B9BBC7;
+	letter-spacing: 3px;
 }
 
 #nav .dropdown1 {
@@ -68,29 +53,29 @@
 	display: inline-block;
 }
 
-#nav #nav_item1, #nav_item2, #nav_item3, #nav_item4, #login {
+#nav #nav_item1, #nav_item2, #nav_item3, #login {
 	position: relative;
 	display: inline-block;
 }
 
-#nav #nav_item1 a, #nav_item2 a, #nav_item3 a,  #nav_item4 a, #login a {
-	color: white;
+#nav #nav_item1 a, #nav_item2 a, #nav_item3 a, #login a {
+	color: black;
 	text-decoration: none;
 	font-size: 20px;
 	transition: 0.4s;
 }
 
 #nav #dropbtn1 {
-	color: white;
-	background-color: #373948;
+	color: black;
+	background-color:white;
 	border: none;
 	font-size: 20px;
 	transition: 0.4s;
 }
 
 #nav #dropbtn2 {
-	color: white;
-	background-color: #373948;
+	color: black;
+	background-color:white;
 	border: none;
 	font-size: 20px;
 	transition: 0.4s;
@@ -124,8 +109,8 @@
 	display: block;
 }
 
-#nav #nav_img, .dropdown1, .dropdown2, #nav_item1, #nav_item2, #nav_item3, #nav_item4, #login  {
-	margin:0 35px;
+#nav #nav_logo, .dropdown1, .dropdown2, #nav_item1, #nav_item2, #nav_item3, #login  {
+	margin:10px 35px 0 35px;
 }
 
 body, html { /* nav상단고정 확인때문에 적용 */
