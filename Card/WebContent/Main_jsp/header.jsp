@@ -7,17 +7,18 @@
 <title>Insert title here</title>
 
 <link rel="stylesheet" type="text/css" href="../Main_css/header.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- 페이드인 아웃 스크립트 주소 -->
 
 </head>
 <body>
 	<div id="nav">
-	
 		<div id="nav_logo">
-			<p id="nav_logo_p"><a href="#">All-Cards</a></p>
+			<a href="#"><img alt="" src="/Card/images/card.png" width="65px" style="vertical-align:middle; margin-right:50px;"></a>
 		</div>
 	
 		<div class="dropdown1">
-			<button id="dropbtn1">차트▽</button>
+			<button id="dropbtn1">신용카드▽</button>
 				<div class="dropdown-content">
 					<a href="#">1_테스트1</a>
 					<a href="#">1_테스트2</a>
@@ -27,7 +28,7 @@
 		</div>
 		
 		<div class="dropdown2">
-			<button id="dropbtn2">검색/비교▽</button>
+			<button id="dropbtn2">체크카드▽</button>
 				<div class="dropdown-content">
 					<a href="#">2_테스트1</a>
 					<a href="#">2_테스트2</a>
@@ -36,47 +37,77 @@
 				</div>
 		</div>
 		
+		<div class="dropdown3">
+			<button id="dropbtn3">카드사▽</button>
+				<div class="dropdown-content">
+					<a href="#">카카오뱅크</a>
+					<a href="#">신한카드</a>
+					<a href="#">현대카드</a>
+					<a href="#">삼성카드</a>
+					<a href="#">KB국민카드</a>
+					<a href="#">IBK기업은행</a>
+					<a href="#">NH농협</a>
+				</div>
+		</div>
+		
 		<div id="nav_item1">
-			<a href="#" id="nav_item1_a">카드사</a>
+			<a href="#" id="nav_item1_a">문의사항</a>
 		</div>
 		
 		<div id="nav_item2">
-			<a href="#" id="nav_item2_a">콘텐츠</a>
+			<a href="#" id="nav_item2_a">고객센터</a>
 		</div>
 		
-		<div id="nav_item3">
-			<a href="#" id="nav_item3_a">추천</a>
+		<div id="login" style="margin-left: 250px;">
+			<button><a href="#">로그인</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="#">회원가입</a>
 		</div>
-		
-		<div id="login">
-			<a href="#">(로그인)</a>
-		</div>
-		
 </div>
 
+<div id="section_1">
+		<div id="s_item1">
+			<div id="slide">
+				<ul>
+					<li><a href="#"><img alt="" src="/Card/images/banner1.jpeg" width="1550px" height="600px"></a></li>
+					<li><a href="#"><img alt="" src="/Card/images/banner2.jpeg" width="1550px" height="600px"></a></li>
+					<li><a href="#"><img alt="" src="/Card/images/banner3.png" width="1550px" height="600px"></a></li>
+				</ul>
+			</div>
+	</div>
+</div>
 <script type="text/javascript">
 
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
 	if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
-	    //document.getElementById("nav").style.padding = "0;";
-	    document.getElementById("nav_logo_p").style.fontSize = "20px";
+	    //document.getElementById("nav").style.padding = "10px 5px 15px 5px";
 	    document.getElementById("dropbtn1").style.fontSize = "16px";
 	    document.getElementById("dropbtn2").style.fontSize = "16px";
+	    document.getElementById("dropbtn3").style.fontSize = "16px";
 	    document.getElementById("nav_item1_a").style.fontSize = "16px";
 	    document.getElementById("nav_item2_a").style.fontSize = "16px";
-	    document.getElementById("nav_item3_a").style.fontSize = "16px";
 	  } else {
-	    document.getElementById("nav").style.padding = "10px 5px 30px 5px";
-	    document.getElementById("nav_logo_p").style.fontSize = "25px";
+	    document.getElementById("nav").style.padding = "10px 5px 20px 5px";
 	    document.getElementById("dropbtn1").style.fontSize = "20px";
 	    document.getElementById("dropbtn2").style.fontSize = "20px";
+	    document.getElementById("dropbtn3").style.fontSize = "20px";
 	    document.getElementById("nav_item1_a").style.fontSize = "20px";
 	    document.getElementById("nav_item2_a").style.fontSize = "20px";
-	    document.getElementById("nav_item3_a").style.fontSize = "20px";
 	  }
 }
+
+</script>
+
+<script type="text/javascript">
+
+	$('#slide>ul>li').hide();
+	$('#slide>ul>li:first-child').show();
+	
+	setInterval(function(){ $('#slide>ul>li:first-child').fadeOut()
+		.next().fadeIn().end(1000)
+		.appendTo('#slide>ul'); },3000);
+
 
 </script>
 

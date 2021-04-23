@@ -18,24 +18,14 @@
 		
 		<p id="footer_p2">
 			누구나 공감할 일상 속 카드소비 이야기<br>
-			매주 1회, 카드고릴라 뉴스레터가 찾아갑니다.
-		</p>
-		
-		<form>
-			<input type="text" placeholder="이메일 주소" style="width: 220px; height: 30px;">
-			<input type="text" placeholder="이름_닉네임도 괜찮아요" style="width: 170px; height: 30px;">
-			<input type="submit" value="구독하기">
-		</form>
-		
-		<p id="footer_p3">
-			<input type="checkbox">구독하기를 누르시면 <u>개인정보 수집 및 이용</u>에 동의되며,<br>수집도니 정보는 서비스가 종료되거나 구독을 해지할 경우 즉시 파기됩니다.
+			매주 1회, 메가IT 뉴스레터가 찾아갑니다.
 		</p>
 		
 	</div>
 	
 	<div id="footer_2">
 	
-		<div id="footer_img">이미지</div>
+		<div id="footer_img"><img alt="" src="/Card/images/card.png"></div>
 	
 	</div>
 	
@@ -51,20 +41,8 @@
 		</div>
 	
 	</div>
-	
+
 	<div id="footer_4">
-		
-		<div id="footer_a">
-			<a href="#" class="a_hover">ABOUT</a>
-			<a href="#" class="a_hover">SERVICE</a>
-			<a href="#" class="a_hover">CONTACT</a>
-			<a href="#" class="a_hover">CARDTEST</a>
-			<a href="#" class="a_hover">PRESTIGETEST</a>
-		</div>
-		
-	</div>
-	
-	<div id="footer_5">
 		<div id="footer_p4">
 			<p>서울특별시 마포구 신촌로 128 적암빌딩 3,4층</p>
 			<p>대표이사 : 메가IT</p>
@@ -73,7 +51,7 @@
 		</div>
 	</div>
 	
-	<div id="footer_6">
+	<div id="footer_5">
 		<div id="footer_p5">
 			<p>Copyright &copy; 2010-2021 메가IT All Rights Reserved.</p>
 		</div>

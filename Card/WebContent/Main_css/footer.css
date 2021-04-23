@@ -7,6 +7,7 @@
 
 #footer {
 	width: 100%;
+	clear: both;
 }
 #footer #footer_1 {
 	width: 100%;
@@ -27,21 +28,7 @@
 	letter-spacing: 5px;
 	color: white;
 	font-weight: lighter;
-	padding: 15px 0;
-}
-
-input[type=submit] {
-	background-color: #EF595D;
-	color: white;
-	padding: 8px 30px;
-	letter-spacing: 2px;
-}
-
-#footer_p3 {
-	color: white;
-	padding: 15px 0 50px 0;
-	font-size: 12px;
-	letter-spacing: 2px;
+	padding: 15px 0 40px 0;
 }
 
 #footer_2 {
@@ -51,7 +38,7 @@ input[type=submit] {
 
 #footer_2 #footer_img {
 	text-align: center;
-	margin: 80px 0;
+	margin: 40px 0;
 }
 
 #footer_3 {
@@ -68,56 +55,36 @@ input[type=submit] {
 	margin: 25px 15px;
 }
 
+#footer_ul ul li img:hover {
+	transform: scale(1.1)
+}
+
 #footer_4 {
 	width: 100%;
 }
 
-#footer_4 #footer_a {
+#footer_4 #footer_p4 {
 	text-align: center;
 	padding: 10px 0;
 }
 
-#footer_4 #footer_a a {
-	text-decoration: none;
-	font-weight: bold;
-	color: black;
-	margin: 0 15px;
-}
-
-#footer_4 #footer_a .a_hover:hover {
-	color: #EF595D;
-}
-
-#footer_4 #footer_a a:visited {
-	color: black;
-}
-
-#footer_5 {
-	width: 100%;
-}
-
-#footer_5 #footer_p4 {
-	text-align: center;
-	padding: 10px 0;
-}
-
-#footer_5 #footer_p4 p {
+#footer_4 #footer_p4 p {
 	display: inline-block;
 	font-size: 12px;
 	margin-right: 25px;
 	color: gray;
 }
 
-#footer_6 {
+#footer_5 {
 	width: 100%;
 }
 
-#footer_6 #footer_p5 {
+#footer_5 #footer_p5 {
 	text-align: center;
 	padding: 10px 0;
 }
 
-#footer_6 #footer_p5 p {
+#footer_5 #footer_p5 p {
 	display: inline-block;
 	font-size: 12px;
 	margin-right: 25px;
