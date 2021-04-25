@@ -11,43 +11,11 @@
 </head>
 <body>
 <%@include file="header.jsp" %>
+
 <div id="section">
 
-	
-	<div id="main_section">	
-	
-		<div id="item1">
-			<div id="item1_img">이미지</div>
-			<div id="item1_write">설명</div>
-		</div>
-		
-		<div id="item1">
-			<div id="item1_img">이미지</div>
-			<div id="item1_write">설명</div>
-		</div>
-		
-		<div id="item1">
-			<div id="item1_img">이미지</div>
-			<div id="item1_write">설명</div>
-		</div>
-		
-		<div id="item1">
-			<div id="item1_img">이미지</div>
-			<div id="item1_write">설명</div>
-		</div>
-		
-		<div id="item1">
-			<div id="item1_img">이미지</div>
-			<div id="item1_write">설명</div>
-		</div>
-		
-		<div id="item1">
-			<div id="item1_img">이미지</div>
-			<div id="item1_write">설명</div>
-		</div>
-	
-	</div>
 </div>
+
 <%@include file="footer.jsp" %>
 </body>
 </html>

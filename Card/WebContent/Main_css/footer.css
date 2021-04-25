@@ -8,6 +8,7 @@
 #footer {
 	width: 100%;
 	clear: both;
+	position: sticky; /* 하단고정..? */
 }
 #footer #footer_1 {
 	width: 100%;
