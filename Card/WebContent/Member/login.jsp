@@ -6,7 +6,8 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
-.login-box{ margin-top: 100px;
+.login-box{ 
+			margin-top: 100px;
 			height:350px;
 			background-color: #5E5966;
 			text-align: center;
@@ -90,7 +91,7 @@ background-color:pink;
 					<div class="col-lg-12 login-form">
 							<form>
 								<div class="form-group">
-									<label class="form-control-label"> USER ID </label>
+									<label class="form-control-label">User ID　</label>
 									<input type="text" class="form-control" maxlength="30">
 								</div>
 								
@@ -98,16 +99,19 @@ background-color:pink;
 									<label class="form-control-label"> Password </label>
 									<input type="password" class="form-control" maxlength="30">
 								</div>
-												
-								<div class="col-lg-12 loginbttm">
-									<div class="col-lg-6 login-btm login-text">
-									<!-- 로그인 실패시  -->	[ ** ]
-									</div>
-									
-									<div class="col-lg-6 login-btm login-botton">
-										 <button type="submit" class="btn btn-outline-primary"> LOGIN</button>
-									</div>
+								
+								<div class="form-group">				
+								
+										<div class="col-lg-6">
+										<!-- 로그인 실패시  -->	[ ** ]
+										</div>
+										
+										<div class="col-lg-6">
+											 <button type="submit" class="btn btn-outline-primary" style="padding: 10px 30px; color: black; margin: 15px;"> LOGIN</button>
+										</div>
+										
 									</div>	
+								
 							</form>
 					
 						
