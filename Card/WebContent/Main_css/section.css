@@ -1,6 +1,21 @@
 @charset "UTF-8";
 
-#section {
-	height: 1800px;
-	background-color: #EBEAF3;
+#section_1 {
+	width: 100%;
+	padding-top: 89px;
+	height: 450px;
+	text-align: center;
+}
+
+#section_1 #s_item1 {
+	text-align: center;
+	height: 600px;
+}
+
+#slide>ul>li {
+	position: absolute;
+	height: 300px;
+	z-index: 1;
+	left: 50%; /* position: absolute; 가운데 정렬 */
+	transform:translateX(-50%); /* position: absolute; 가운데 정렬 */
 }

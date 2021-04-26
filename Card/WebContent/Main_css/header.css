@@ -56,7 +56,7 @@
 #nav #nav_item1 a, #nav_item2 a, #login a {
 	color: black;
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 15px;
 	transition: 0.4s;
 }
 
@@ -64,7 +64,7 @@
 	color: black;
 	background-color:white;
 	border: none;
-	font-size: 20px;
+	font-size: 15px;
 	transition: 0.4s;
 }
 
@@ -72,7 +72,7 @@
 	color: black;
 	background-color:white;
 	border: none;
-	font-size: 20px;
+	font-size: 15px;
 	transition: 0.4s;
 }
 
@@ -80,7 +80,7 @@
 	color: black;
 	background-color:white;
 	border: none;
-	font-size: 20px;
+	font-size: 15px;
 	transition: 0.4s;
 }
 
@@ -98,6 +98,7 @@
 	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
+	font-size: 12px;
 }
 
 #nav .dropdown-content a:hover {
@@ -129,24 +130,4 @@
 	padding: 5px;
 	letter-spacing: 2px;
 	border: solid 1px lightgray;
-}
-
-#section_1 {
-	width: 100%;
-	padding-top: 89px;
-	height: 600px;
-	text-align: center;
-}
-
-#section_1 #s_item1 {
-	text-align: center;
-	height: 600px;
-}
-
-#slide>ul>li {
-	position: absolute;
-	height: 300px;
-	z-index: 1;
-	left: 50%; /* position: absolute; 가운데 정렬 */
-	transform:translateX(-50%); /* position: absolute; 가운데 정렬 */
 }

@@ -7,7 +7,7 @@
 	<title>Insert title here</title>
 	<style>
 	.login-box{ margin-top: 100px;
-				height: 600px;
+				padding : 30px;
 				background-color: #5E5966;
 				text-align: center;
 				box-shadow: 0 3px 6px balck;}
@@ -99,49 +99,50 @@
 					
 					<!-- table로 간격맞추기  -->
 						<div class="col-lg-12 login-title">
-							Member Login
+							Member SignsUP
 						</div>
-						<div class="col-lg-12 login-form">
-								
+						
+			
+						<div class="col-lg-5 login-form" >
 								<form>
-									<table class="form-group">
-										<tr>
+									<table class="form-group" style="margin: 0 auto;" >
+										<tr style="text-align: left;" >
 										<td><label class="form-control-label"> [아이디] * </label> </td>
 										<td> <input type="text" class="form-control" maxlength="30" name="id"></td>
 										</tr>
 										
-										<tr>
+										<tr style="text-align: left;" >
 										<td> <label class="form-control-label"> [비밀번호] *</label> </td>
 										<td> <input type="password" class="form-control" maxlength="30" name="password"> </td>
 										</tr>
 										
-										<tr>
+										<tr style="text-align: left;" >
 										<td> <label class="form-control-label"> [비밀번호 확인] *</label> </td>
 										<td> <input type="password" class="form-control" maxlength="30" name="passwordcheck"> </td>
 										</tr>
 										
-										<tr>
+										<tr style="text-align: left;" >
 										<td> <label class="form-control-label"> [이름] * </label> </td>
 										<td> <input type="text" class="form-control" maxlength="30" name="name"> </td>
 										</tr>
 										
-										<tr>
+										<tr style="text-align: left;" >
 										<td> <label class="form-control-label"> [성별] * </label> </td>
-										<td> <input type="radio" class="form-control" maxlength="30" name="sex" > 남자 </td>
-										<td> <input type="radio" class="form-control" maxlength="30" name="sex" > 여자 </td>
+										<td> <input type="radio" class="form-control" maxlength="30" name="sex" > 남자
+										<input type="radio" class="form-control" maxlength="30" name="sex" > 여자 </td>
 										</tr>
 										
-										<tr>
+										<tr style="text-align: left;" >
 										<td><label class="form-control-label"> [이름] * </label> </td>
 										<td><input type="text" class="form-control" maxlength="30" name="name"></td>
 										</tr>
 										
-										<tr>
+										<tr style="text-align: left;">
 										<td> <label class="form-control-label">[연락처] * </label> </td>
 										<td><input type="text" class="form-control" maxlength="30" name="phone"></td>
 										</tr>
 										
-										<tr>
+										<tr style="text-align: left;">
 										<td><label class="form-control-label"> [카드사] </label></td>
 										<td><select>
 											<option> 국민카드 </option>
@@ -159,38 +160,44 @@
 										</select></td>
 										</tr>
 										
-										<tr>
-										<td><label class="form-control-label"> [카드 혜택] </label></td>
-										<td><input type="checkbox" name="interset1" > 쇼핑
-										<td><input type="checkbox" name="interset2" > 통신요금
-										<td><input type="checkbox" name="interset3" > 교통
-										<td><input type="checkbox" name="interset4" > 주유
-										<td><input type="checkbox" name="interset5" > 편의점
-										<td><input type="checkbox" name="interset6" > 배달
-										<td><input type="checkbox" name="interset7" > 구독서비스
-										<td><input type="checkbox" name="interset1" > 카페
-										<td><input type="checkbox" name="interset1" > 공과금
-										<td><input type="checkbox" name="interset1" > 마일리지
+										<tr style="text-align: left;">
+										<td rowspan="4"><label class="form-control-label" > [카드 혜택] </label></td>
+											<td style="padding-top: 30px;"><input type="checkbox" name="interset1" > 쇼핑
+											<input type="checkbox" name="interset2" > 통신요금
+											<input type="checkbox" name="interset3" > 교통</td>
 										</tr>
+										<tr style="text-align: left;" >
+											<td><input type="checkbox" name="interset4" > 주유
+											<input type="checkbox" name="interset5" > 편의점
+											<input type="checkbox" name="interset6" > 배달</td>
 										
-										<tr>
-										<td><label class="form-control-label"> [카드 타입]</label></td>
-										<td><input type="checkbox" name="type1" > 할인
-										<td><input type="checkbox" name="type2" > 포인트
-										<td><input type="checkbox" name="type3" > 마일리지
+										<tr style="text-align: left;">
+											<td><input type="checkbox" name="interset7" > 구독서비스
+											<input type="checkbox" name="interset1" > 카페
+											<input type="checkbox" name="interset1" > 공과금</td>
+											
 										</tr>
-										
-														
-									</table>
+										<tr style="text-align: left; ">
+											<td style="padding-bottom: 30px;"><input type="checkbox" name="interset1" > 마일리지</td>
+										</tr>
 									
-									
+				
+										<tr style="text-align: left;">
+											<td ><label class="form-control-label"> [카드 타입]</label></td>
+											<td ><input type="checkbox" name="type1" > 할인
+											<input type="checkbox" name="type2" > 포인트
+											<input type="checkbox" name="type3" > 마일리지 </td>
+										</tr>
+									</table>		
+	
 									<div class="col-lg-12 loginbttm">
 										<div class="col-lg-6 login-btm login-text">
-										<!-- 로그인 실패시  -->	[ ** ]
+											<!-- 회원가입 실패시 실패시  -->	[ ** ]
 										</div>
 										
-										<div class="col-lg-6 login-btm login-botton">
-											 <button type="submit" class="btn btn-outline-primary"> LOGIN</button>
+										<div class="col-lg-6 login-btm login-botton" >
+											 <button type="submit" class="btn btn-outline-primary" style="padding: 10px 30px; color: black; margin-right: 10px"> 회원가입 </button>
+											 <button type="reset" class="btn btn-outline-primary" style="padding: 10px 30px; color: black;"> 다시작성 </button>
 										</div>
 										</div>	
 								</form>

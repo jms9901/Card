@@ -6,7 +6,8 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
-.login-box{ margin-top: 100px;
+.login-box{ 
+			margin-top: 100px;
 			height:350px;
 			background-color: #5E5966;
 			text-align: center;
@@ -95,7 +96,11 @@ button{ background-color:#5E5966; color:white;}
 					<div class="col-lg-12 login-form">
 							<form>
 								<div class="form-group">
+<<<<<<< HEAD
 									<label class="form-control-label"> 사용자 ID </label>
+=======
+									<label class="form-control-label">User ID　</label>
+>>>>>>> branch 'master' of https://github.com/jms9901/Card.git
 									<input type="text" class="form-control" maxlength="30">
 								</div>
 								
@@ -103,6 +108,7 @@ button{ background-color:#5E5966; color:white;}
 									<label class="form-control-label"> 비밀번호 </label>
 									<input type="password" class="form-control" maxlength="30">
 								</div>
+<<<<<<< HEAD
 												
 								<div class="col-lg-12 loginbttm">
 									<div class="col-lg-6 login-btm login-text">
@@ -112,7 +118,21 @@ button{ background-color:#5E5966; color:white;}
 									<div class="col-lg-6 login-btm login-botton">
 										 <button type="submit" class="btn btn-outline-primary"> 로그인</button>
 									</div>
+=======
+								
+								<div class="form-group">				
+								
+										<div class="col-lg-6">
+										<!-- 로그인 실패시  -->	[ ** ]
+										</div>
+										
+										<div class="col-lg-6">
+											 <button type="submit" class="btn btn-outline-primary" style="padding: 10px 30px; color: black; margin: 15px;"> LOGIN</button>
+										</div>
+										
+>>>>>>> branch 'master' of https://github.com/jms9901/Card.git
 									</div>	
+<<<<<<< HEAD
 									
 								<div class="col-lg-12 findbttm">
 									<div class="col-lg-6 find-btn find-id">
@@ -128,6 +148,8 @@ button{ background-color:#5E5966; color:white;}
 								
 																	
 									
+=======
+>>>>>>> branch 'master' of https://github.com/jms9901/Card.git
 								
 							</form>
 					

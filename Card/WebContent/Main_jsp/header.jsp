@@ -68,17 +68,6 @@
 		</div>
 </div>
 
-<div id="section_1">
-		<div id="s_item1">
-			<div id="slide">
-				<ul>
-					<li><a href="#"><img alt="" src="/Card/images/banner1.jpeg" width="1550px" height="600px"></a></li>
-					<li><a href="#"><img alt="" src="/Card/images/banner2.jpeg" width="1550px" height="600px"></a></li>
-					<li><a href="#"><img alt="" src="/Card/images/banner3.png" width="1550px" height="600px"></a></li>
-				</ul>
-			</div>
-	</div>
-</div>
 <script type="text/javascript">
 
 window.onscroll = function() {scrollFunction()};
@@ -86,32 +75,20 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
 	if (document.body.scrollTop > 60 || document.documentElement.scrollTop > 60) {
 	    //document.getElementById("nav").style.padding = "10px 5px 15px 5px";
-	    document.getElementById("dropbtn1").style.fontSize = "16px";
-	    document.getElementById("dropbtn2").style.fontSize = "16px";
-	    document.getElementById("dropbtn3").style.fontSize = "16px";
-	    document.getElementById("nav_item1_a").style.fontSize = "16px";
-	    document.getElementById("nav_item2_a").style.fontSize = "16px";
+	    document.getElementById("dropbtn1").style.fontSize = "12px";
+	    document.getElementById("dropbtn2").style.fontSize = "12px";
+	    document.getElementById("dropbtn3").style.fontSize = "12px";
+	    document.getElementById("nav_item1_a").style.fontSize = "12px";
+	    document.getElementById("nav_item2_a").style.fontSize = "12px";
 	  } else {
 	    document.getElementById("nav").style.padding = "10px 5px 20px 5px";
-	    document.getElementById("dropbtn1").style.fontSize = "20px";
-	    document.getElementById("dropbtn2").style.fontSize = "20px";
-	    document.getElementById("dropbtn3").style.fontSize = "20px";
-	    document.getElementById("nav_item1_a").style.fontSize = "20px";
-	    document.getElementById("nav_item2_a").style.fontSize = "20px";
+	    document.getElementById("dropbtn1").style.fontSize = "15px";
+	    document.getElementById("dropbtn2").style.fontSize = "15px";
+	    document.getElementById("dropbtn3").style.fontSize = "15px";
+	    document.getElementById("nav_item1_a").style.fontSize = "15px";
+	    document.getElementById("nav_item2_a").style.fontSize = "15px";
 	  }
 }
-
-</script>
-
-<script type="text/javascript">
-
-	$('#slide>ul>li').hide();
-	$('#slide>ul>li:first-child').show();
-	
-	setInterval(function(){ $('#slide>ul>li:first-child').fadeOut()
-		.next().fadeIn().end(1000)
-		.appendTo('#slide>ul'); },3000);
-
 
 </script>
 
