@@ -15,7 +15,7 @@
 .findpw-key{ height:100px;
 			font-size: 80px;
 			line-height: 100px;
-			background-image:url("/Card/images/card.png" );
+			background-image:url("/Card/images/card.png");
 			background-repeat:no-repeat;
 			background-position: center;}
 			
