@@ -6,6 +6,8 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 
+<meta name="viewport" content ="width=device-width initial-scale = 1 "> <%// 반응형 웹 만들기 %>
+
 <link rel="stylesheet" type="text/css" href="../Main_css/header.css">
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- 페이드인 아웃 스크립트 주소 -->
@@ -62,7 +64,7 @@
 			<a href="#" id="nav_item2_a">고객센터</a>
 		</div>
 		
-		<div id="login" style="margin-left: 250px;">
+		<div id="login" style="margin-left: 68px;">
 			<button><a href="#">로그인</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 			<a href="#">회원가입</a>
 		</div>
