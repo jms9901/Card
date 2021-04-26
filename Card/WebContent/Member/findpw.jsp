@@ -54,6 +54,7 @@ margin-bottom: 10px;
 	box-shadow:none;
 	
 }
+
 .form-control-label{ 
 font-size:15px;
 color: white;
