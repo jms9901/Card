@@ -68,9 +68,14 @@ letter-spacing:1px;}
 .btn-outline-primary:hover{
 background-color:pink;
 }
-.login-btm{float: left; margin-top: 10px;}
-.login-button{ margin-bottom: 30px; text-align: right; color:pink;}
-.login-text{  text-align: left; font-weight:bold; color: pink;}
+.login-btm{float: center; margin-top: 10px;}
+.login-button{ margin-left:5px; margin-bottom: 30px; text-align: center; color:pink;}
+.login-text{  text-align: center; font-weight:bold; color: pink;}
+
+.find-btn{float:left; margin-top:10px; }
+.find-id{ margin-left:800px; }
+button{ background-color:#5E5966; color:white;}
+
 </style>
 </head>
 <body>
@@ -90,12 +95,12 @@ background-color:pink;
 					<div class="col-lg-12 login-form">
 							<form>
 								<div class="form-group">
-									<label class="form-control-label"> USER ID </label>
+									<label class="form-control-label"> 사용자 ID </label>
 									<input type="text" class="form-control" maxlength="30">
 								</div>
 								
 								<div class="form-group">
-									<label class="form-control-label"> Password </label>
+									<label class="form-control-label"> 비밀번호 </label>
 									<input type="password" class="form-control" maxlength="30">
 								</div>
 												
@@ -105,9 +110,25 @@ background-color:pink;
 									</div>
 									
 									<div class="col-lg-6 login-btm login-botton">
-										 <button type="submit" class="btn btn-outline-primary"> LOGIN</button>
+										 <button type="submit" class="btn btn-outline-primary"> 로그인</button>
 									</div>
 									</div>	
+									
+								<div class="col-lg-12 findbttm">
+									<div class="col-lg-6 find-btn find-id">
+										<button type="submit" class="btn btn-inline-primary"> 아이디 찾기 </button>
+									</div>
+									<div class="col-lg-6 find-btn find-pw">
+										<button type="submit" class="btn btn-inline-primary"> 비밀번호 찾기 </button>
+									
+									</div>
+								
+								</div>
+								
+								
+																	
+									
+								
 							</form>
 					
 						
