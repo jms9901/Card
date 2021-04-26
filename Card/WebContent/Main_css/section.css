@@ -3,7 +3,7 @@
 #section_1 {
 	width: 100%;
 	padding-top: 89px;
-	height: 450px;
+	height: 380px;
 	text-align: center;
 }
 
@@ -19,3 +19,142 @@
 	left: 50%; /* position: absolute; 가운데 정렬 */
 	transform:translateX(-50%); /* position: absolute; 가운데 정렬 */
 }
+
+#section_2 {
+	width: 100%;
+	text-align: center;
+	border-top: solid 1px black;
+	margin-bottom: 35px;
+}
+
+#s_item2 h3 {
+	font-size: 25px;
+	margin: 35px 0;
+}
+
+#s_item2 #span_detail {
+	padding-bottom: 9px;
+	border-bottom: solid 2px black;
+	margin-bottom: 15px;
+}
+
+
+
+
+
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+  border: none;
+}
+
+.slide {
+  position: relative;
+  padding-top: 50px;
+  overflow: hidden;
+}
+
+.panel {
+  width: 400%;
+}
+
+.panel:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.panel>li {
+  width: 25%;
+  height: 250px;
+  float: left;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.panel>li:nth-of-type(1) {
+  background-color: white;
+}
+
+.panel>li:nth-of-type(2) {
+  background-color: white;
+}
+
+.panel>li:nth-of-type(3) {
+  background-color: white;
+}
+
+.dot:after {
+  content: "";
+  display: block;
+  clear: both;
+
+}
+
+.dot {
+  position: absolute;
+  left: 50%;
+  bottom: 10%;
+  transform: translateX(-50%);
+  padding-top : 50px;
+}
+
+.dot>li {
+  float: left;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #342f2f;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-indent: -9999px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.dot>li.on {
+  background-color: #342f2f;
+}
+
+.prev {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 21%;
+  cursor: pointer;
+}
+
+.next {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 21%;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
