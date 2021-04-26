@@ -33,7 +33,7 @@
 	
 		<div id="s_item2">
 			<h3>CREDIT CARD</h3>
-			<span id="span_detail">신용카드 BEST 상품들을 만나보세요.</span>
+			<span id="span_detail">PEANUTS BEST 상품들을 만나보세요.</span>
 		</div>
 		
 		<div id="s_item3">
@@ -42,7 +42,8 @@
 					<ul class="panel">
 						<li>
 							<img alt="" src="/Card/images/현대카드.png" width="90">
-							asdasd
+							1. 카드사
+							2. 카드 이름
 						</li>
 						<li><img alt="" src="/Card/images/현대카드.png" width="90"></li>
 						<li><img alt="" src="/Card/images/현대카드.png" width="90"></li>
@@ -58,6 +59,195 @@
 
 			</div>
 	</div>
+	
+	<div id="section_3">
+		
+		<div id="s_item4">
+			<div id="s_item5">
+				<h3>CREDIT CARD LIST</h3>
+				<span id="span_detail2">PEANUTS에서 추천하는 CREDIT CARD LIST</span>
+			</div>
+			
+			<ul class="ul1">
+			
+				<li class="list_li">
+				
+					<a href="#"><img alt="" src="/Card/images/현대카드.png" width="150"></a>
+					
+					<div id="list_info">
+						<span class="company"><a href="#">현대카드</a></span>
+						<span class="name"><a href="#">블랙카드</a></span>
+					</div>
+				
+				</li>
+				
+				<li class="list_li">
+				
+					<a href="#"><img alt="" src="/Card/images/현대카드.png" width="150"></a>
+					
+					<div id="list_info">
+						<span class="company"><a href="#">현대카드</a></span>
+						<span class="name"><a href="#">블랙카드</a></span>
+					</div>
+				
+				</li>
+				
+				<li class="list_li">
+				
+					<a href="#"><img alt="" src="/Card/images/현대카드.png" width="150"></a>
+					
+					<div id="list_info">
+						<span class="company"><a href="#">현대카드</a></span>
+						<span class="name"><a href="#">블랙카드</a></span>
+					</div>
+				
+				</li>
+				
+				<li class="list_li">
+				
+					<a href="#"><img alt="" src="/Card/images/현대카드.png" width="150"></a>
+					
+					<div id="list_info">
+						<span class="company"><a href="#">현대카드</a></span>
+						<span class="name"><a href="#">블랙카드</a></span>
+					</div>
+				
+				</li>
+				
+				<li class="list_li">
+				
+					<a href="#"><img alt="" src="/Card/images/현대카드.png" width="150"></a>
+					
+					<div id="list_info">
+						<span class="company"><a href="#">현대카드</a></span>
+						<span class="name"><a href="#">블랙카드</a></span>
+					</div>
+				
+				</li>
+				
+				<li class="list_li">
+				
+					<a href="#"><img alt="" src="/Card/images/현대카드.png" width="150"></a>
+					
+					<div id="list_info">
+						<span class="company"><a href="#">현대카드</a></span>
+						<span class="name"><a href="#">블랙카드</a></span>
+					</div>
+				
+				</li>
+				
+				<li class="list_li">
+				
+					<a href="#"><img alt="" src="/Card/images/현대카드.png" width="150"></a>
+					
+					<div id="list_info">
+						<span class="company"><a href="#">현대카드</a></span>
+						<span class="names"><a href="#">블랙카드</a></span>
+					</div>
+				
+				</li>
+				
+			</ul>
+			
+		</div>
+		
+	</div>
+	
+	<div id="div_line"></div>
+	
+	<div id="section_4">
+		
+		<div id="s_item6">
+			<div id="s_item7">
+				<h3>CHECK CARD LIST</h3>
+				<span id="span_detail3">PEANUTS에서 추천하는 CHECK CARD LIST</span>
+			</div>
+			
+			<ul class="ul2">
+			
+				<li class="list_li">
+				
+					<a href="#"><img alt="" src="/Card/images/현대카드.png" width="150"></a>
+					
+					<div id="list_info">
+						<span class="company"><a href="#">현대카드</a></span>
+						<span class="name"><a href="#">블랙카드</a></span>
+					</div>
+				
+				</li>
+				
+				<li class="list_li">
+				
+					<a href="#"><img alt="" src="/Card/images/현대카드.png" width="150"></a>
+					
+					<div id="list_info">
+						<span class="company"><a href="#">현대카드</a></span>
+						<span class="name"><a href="#">블랙카드</a></span>
+					</div>
+				
+				</li>
+				
+				<li class="list_li">
+				
+					<a href="#"><img alt="" src="/Card/images/현대카드.png" width="150"></a>
+					
+					<div id="list_info">
+						<span class="company"><a href="#">현대카드</a></span>
+						<span class="name"><a href="#">블랙카드</a></span>
+					</div>
+				
+				</li>
+				
+				<li class="list_li">
+				
+					<a href="#"><img alt="" src="/Card/images/현대카드.png" width="150"></a>
+					
+					<div id="list_info">
+						<span class="company"><a href="#">현대카드</a></span>
+						<span class="name"><a href="#">블랙카드</a></span>
+					</div>
+				
+				</li>
+				
+				<li class="list_li">
+				
+					<a href="#"><img alt="" src="/Card/images/현대카드.png" width="150"></a>
+					
+					<div id="list_info">
+						<span class="company"><a href="#">현대카드</a></span>
+						<span class="name"><a href="#">블랙카드</a></span>
+					</div>
+				
+				</li>
+				
+				<li class="list_li">
+				
+					<a href="#"><img alt="" src="/Card/images/현대카드.png" width="150"></a>
+					
+					<div id="list_info">
+						<span class="company"><a href="#">현대카드</a></span>
+						<span class="name"><a href="#">블랙카드</a></span>
+					</div>
+				
+				</li>
+				
+				<li class="list_li">
+				
+					<a href="#"><img alt="" src="/Card/images/현대카드.png" width="150"></a>
+					
+					<div id="list_info">
+						<span class="company"><a href="#">현대카드</a></span>
+						<span class="names"><a href="#">블랙카드</a></span>
+					</div>
+				
+				</li>
+				
+			</ul>
+			
+		</div>
+		
+	</div>
+	
 </div>
 <%@include file="footer.jsp" %>
 

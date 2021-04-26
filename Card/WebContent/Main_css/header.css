@@ -4,6 +4,7 @@
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	font-family: 'MapoFlowerIsland';
 }
 
 #nav {
@@ -130,4 +131,11 @@
 	padding: 5px;
 	letter-spacing: 2px;
 	border: solid 1px lightgray;
+}
+
+@font-face {
+    	font-family: 'MapoFlowerIsland';
+   		src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff');
+    	font-weight: normal;
+    	font-style: normal;
 }
