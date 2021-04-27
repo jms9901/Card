@@ -16,7 +16,7 @@
 <body>
 	<div id="nav">
 		<div id="nav_logo">
-			<a href="#"><img alt="" src="/Card/images/card.png" width="65px" style="vertical-align:middle; margin-right:50px;"></a>
+			<a href="/Card/Main_jsp/section.jsp"><img alt="" src="/Card/images/card.png" width="65px" style="vertical-align:middle; margin-right:50px;"></a>
 		</div>
 	
 		<div class="dropdown1">
@@ -65,8 +65,8 @@
 		</div>
 		
 		<div id="login" style="margin-left: 68px;">
-			<button><a href="#">로그인</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="#">회원가입</a>
+			<button><a href="/Card/Member/login.jsp">로그인</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="/Card/Member/signup.jsp">회원가입</a>
 		</div>
 </div>
 
