@@ -106,7 +106,7 @@
 						
 			
 						<div class="col-lg-5 login-form" >
-								<form>
+								<form method="post" action="signupcontroller.jsp">
 									<table class="form-group" style="margin: 0 auto;" >
 										<tr style="text-align: left;" >
 										<td><label class="form-control-label"> [아이디] * </label> </td>
@@ -130,14 +130,10 @@
 										
 										<tr style="text-align: left;" >
 										<td> <label class="form-control-label"> [성별] * </label> </td>
-										<td> <input type="radio" class="form-control" maxlength="30" name="sex" > 남자
-										<input type="radio" class="form-control" maxlength="30" name="sex" > 여자 </td>
+										<td> <input type="radio" class="form-control" maxlength="30" name="sex" value="man"> 남자
+										<input type="radio" class="form-control" maxlength="30" name="sex" value="wman"> 여자 </td>
 										</tr>
 										
-										<tr style="text-align: left;" >
-										<td><label class="form-control-label"> [이름] * </label> </td>
-										<td><input type="text" class="form-control" maxlength="30" name="name"></td>
-										</tr>
 										
 										<tr style="text-align: left;">
 										<td> <label class="form-control-label">[연락처] * </label> </td>
@@ -145,50 +141,51 @@
 										</tr>
 										
 										<tr style="text-align: left;">
-										<td><label class="form-control-label"> [카드사] </label></td>
-										<td><select>
-											<option> 국민카드 </option>
-											<option> 롯데카드 </option>
-											<option> 신한카드 </option>
-											<option> 삼성카드 </option>
-											<option> 우리카드 </option>
-											<option> NH농협카드 </option>
-											<option> 하나카드 </option>
-											<option> 씨티카드 </option>
-											<option> IBK기업카드 </option>
-											<option> 현대카드 </option>
-											<option> 우체국 </option>
+										<td><label class="form-control-label" > [카드사] </label></td>
+										<td><select name="company">
+											<option value="국민"> 국민카드 </option>
+											<option value="롯데"> 롯데카드 </option>
+											<option value="신한"> 신한카드 </option>
+											<option value="삼성"> 삼성카드 </option>
+											<option value="우리"> 우리카드 </option>
+											<option value="농협"> NH농협카드 </option>
+											<option value="하나"> 하나카드 </option>
+											<option value="씨티"> 씨티카드 </option>
+											<option value="기업"> IBK기업카드 </option>
+											<option value="현대"> 현대카드 </option>
+											<option value="우체국"> 우체국 </option>
 											
 										</select></td>
 										</tr>
 										
 										<tr style="text-align: left;">
 										<td rowspan="4"><label class="form-control-label" > [카드 혜택] </label></td>
-											<td style="padding-top: 30px;"><input type="checkbox" name="interset1" > 쇼핑
-											<input type="checkbox" name="interset2" > 통신요금
-											<input type="checkbox" name="interset3" > 교통</td>
+											<td style="padding-top: 30px;"><input type="checkbox" name="interset1" value="쇼핑" > 쇼핑
+											<input type="checkbox" name="interset2" value="통신요금"> 통신요금
+											<input type="checkbox" name="interset3" value="교통"> 교통</td>
 										</tr>
 										<tr style="text-align: left;" >
-											<td><input type="checkbox" name="interset4" > 주유
-											<input type="checkbox" name="interset5" > 편의점
-											<input type="checkbox" name="interset6" > 배달</td>
+											<td><input type="checkbox" name="interset4" value="주유"> 주유
+											<input type="checkbox" name="interset5" value="편의점"> 편의점
+											<input type="checkbox" name="interset6" value="배달"> 배달</td>
 										
 										<tr style="text-align: left;">
-											<td><input type="checkbox" name="interset7" > 구독서비스
-											<input type="checkbox" name="interset1" > 카페
-											<input type="checkbox" name="interset1" > 공과금</td>
+											<td><input type="checkbox" name="interset7" value="구독"> 구독서비스
+											<input type="checkbox" name="interset8" value="카페"> 카페
+											<input type="checkbox" name="interset9" value="공과금"> 공과금</td>
 											
 										</tr>
 										<tr style="text-align: left; ">
-											<td style="padding-bottom: 30px;"><input type="checkbox" name="interset1" > 마일리지</td>
+											<td style="padding-bottom: 30px;"><input type="checkbox" name="interset10" value="마일리지"> 마일리지</td>
 										</tr>
 									
 				
 										<tr style="text-align: left;">
-											<td ><label class="form-control-label"> [카드 타입]</label></td>
-											<td ><input type="checkbox" name="type1" > 할인
-											<input type="checkbox" name="type2" > 포인트
-											<input type="checkbox" name="type3" > 마일리지 </td>
+											<td ><label class="form-control-label" > [카드 타입]</label></td>
+											<td >
+											<input type="checkbox" name="type1" value="할인"> 할인
+											<input type="checkbox" name="type2" value="포인트"> 포인트
+											<input type="checkbox" name="type3" value="마일리지"> 마일리지 </td>
 										</tr>
 									</table>		
 	

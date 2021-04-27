@@ -36,11 +36,10 @@ create table card.member(
 	member_resdentnum int primary key AUTO_INCREMENT,
 	member_sex varchar(40) not null,
 	member_birth varchar(100) not null,
-	member_phone int not null
-
-/*member_cardcompany varchar(600) not null,
-member_cardbenefit varchar(600) not null,
-member_cardtype varchar (600) not null*/
+	member_phone varchar(100) not null
+    member_cardcompany varchar(600) not null,
+	member_cardbenefit varchar(600) not null,
+	member_cardtype varchar (600) not null
 
 
 
