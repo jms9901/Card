@@ -4,7 +4,14 @@
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	font-family: 'MapoFlowerIsland';
+	font-family: 'S-CoreDream-3Light';
+}
+
+@font-face {
+     font-family: 'S-CoreDream-3Light';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
 }
 
 #nav {
@@ -131,11 +138,4 @@
 	padding: 5px;
 	letter-spacing: 2px;
 	border: solid 1px lightgray;
-}
-
-@font-face {
-    	font-family: 'MapoFlowerIsland';
-   		src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/MapoFlowerIslandA.woff') format('woff');
-    	font-weight: normal;
-    	font-style: normal;
 }

@@ -8,7 +8,7 @@ create table Card_company(
 
 
 create table Card(
-	card_number int auto_increment primary key, 
+	card_number int auto_increment primary key,
 	card_name varchar(100) not null,             
 	card_company varchar(100) not null,          
 	recommendation int,                         
