@@ -1,3 +1,6 @@
+<%@page import="java.io.PrintWriter"%>
+<%@page import="DAO.CardDao"%>
+<%@page import="DTO.CardDto"%>
 <%@page import="com.oreilly.servlet.multipart.DefaultFileRenamePolicy"%>
 <%@page import="com.oreilly.servlet.MultipartRequest"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -18,6 +21,43 @@
 		MultipartRequest multi = new MultipartRequest(request, realFolder, 1024*1024*10, "UTF-8", new DefaultFileRenamePolicy());
 													// 요청방식, 저장위치, "파일최대용량", "인코딩값", "보안식"
 													// DefaultFileRenamePolicy() : 업로드시 중복된 파일명 제거
+													
+		request.setCharacterEncoding("UTF-8");
+		
+		String card_name = multi.getParameter("card_name");
+		String card_company = multi.getParameter("card_company");
+		int membership_fee = Integer.parseInt(multi.getParameter("membership_fee"));
+		String images = multi.getFilesystemName("images");
+		String bank_link = multi.getParameter("bank_link");
+		
+		CardDto cardDto = new CardDto(card_name, card_company, membership_fee, images, bank_link);
+		
+		CardDao dao = CardDao.getinstance();
+
+	
+		int result = dao.cardadd(cardDto);
+		
+		if(result == 1) {
+			
+			PrintWriter script = response.getWriter();
+			script.println("<script>");
+			
+				script.println("alert('카드 등록 완료');");
+				script.println("location.href='/Card/Main_jsp/section.jsp'");
+			
+			script.println("</script>");
+			
+		} else {
+			
+			PrintWriter script = response.getWriter();
+			script.println("<script>");
+			
+				script.println("alert('카드 등록 실패');");
+				 script.println("history.back()"); 
+			
+			script.println("</script>");
+			
+		}
 
 %>
 
