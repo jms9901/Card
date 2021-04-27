@@ -1,13 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
 .findpw-box{ margin-top: 100px;
-			height:350px;
+			padding : 30px;
 			background-color: #5E5966;
 			text-align: center;
 			box-shadow: 0 3px 6px balck;}
@@ -73,47 +73,59 @@ background-color:pink;
 .findpw-btm{float: center; margin-top: 10px;}
 .findpw-button{ margin-left:5px; margin-bottom: 30px; text-align: center; color:pink;}
 .findpw-text{  text-align: center; font-weight:bold; color: pink;}
+
+
+input{
+	
+	height: 30px;
+	width: 250px;	
+}
+
+
+
 </style>
 </head>
 <body>
 
+<%@include file="../Main_jsp/header.jsp" %>
+
 <div class="container">
 	
 		<div class="row">
-			<div class= "col-lg-3 col-md-2"> </div> <!-- °ø¹é -->
+			<div class= "col-lg-3 col-md-2"> </div> <!-- ê³µë°± -->
 				<div class = "col-lg-6 col-md-8 findpw-box">
 					<div class="col-lg-12 findpw-key">
 					<i class="fa fa-key" aria-hidden="true"></i>
 				</div>
 				
 					<div class="col-lg-12 findpw-title">
-					 ºñ¹Ð¹øÈ£ Ã£±â
+					 ë¹„ë°€ë²ˆí˜¸ ì°¾ê¸°
 					</div>
 					<div class="col-lg-12 findpw-form">
 							<form>
 								<div class="form-group">
-									<label class="form-control-label"> ¼ºÇÔ </label>
-									<input type="text" class="form-control" maxlength="30">
+									
+									<input type="text" class="form-control" maxlength="30" placeholder="ì„±í•¨">
 								</div>
 								
 								<div class="form-group">
-									<label class="form-control-label"> ¾ÆÀÌµð </label>
-									<input type="text" class="form-control" maxlength="30">
+									
+									<input type="text" class="form-control" maxlength="30" placeholder="ì•„ì´ë””">
 								</div>
 								
 								
 								<div class="form-group">
-									<label class="form-control-label"> ¿¬¶ôÃ³ </label>
-									<input type="text" class="form-control" maxlength="30">
+								
+									<input type="text" class="form-control" maxlength="30" placeholder="ì—°ë½ì²˜">
 								</div>
 												
 								<div class="col-lg-12 findpwbttm">
 									<div class="col-lg-6 findpw-btm findpw-text">
-									<!-- ºñ¹Ð¹øÈ£ Ã£±â ½ÇÆÐ½Ã  -->	[ ** ]
+									<!-- ë¹„ë°€ë²ˆí˜¸ ì°¾ê¸° ì‹¤íŒ¨ì‹œ  -->	[ ** ]
 									</div>
 									
 									<div class="col-lg-6 findpw-btm findpw-botton">
-										 <button type="submit" class="btn btn-outline-primary"> ºñ¹Ð¹øÈ£ Ã£±â </button>
+										 <button type="submit" > ë¹„ë°€ë²ˆí˜¸ ì°¾ê¸° </button>
 									</div>
 									</div>	
 						

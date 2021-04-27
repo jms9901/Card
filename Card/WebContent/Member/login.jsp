@@ -6,9 +6,16 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <style>
+
+
+a{
+	text-decoration: none;
+	color: white;
+}
 .login-box{ 
 			margin-top: 100px;
-			height:350px;
+			
+			padding : 30px;
 			background-color: #5E5966;
 			text-align: center;
 			box-shadow: 0 3px 6px balck;}
@@ -54,6 +61,12 @@ margin-bottom: 10px;
 	box-shadow:none;
 	
 }
+input{
+	
+	height: 30px;
+	width: 250px;	
+}
+
 .form-control-label{ 
 font-size:10px;
 color: white;
@@ -80,6 +93,8 @@ button{ background-color:#5E5966; color:white;}
 </style>
 </head>
 <body>
+
+<%@include file="../Main_jsp/header.jsp" %>
 	
 	<div class="container">
 	
@@ -88,7 +103,7 @@ button{ background-color:#5E5966; color:white;}
 				<div class = "col-lg-6 col-md-8 login-box">
 					<div class="col-lg-12 login-key">
 					<i class="fa fa-key" aria-hidden="true"></i>
-				</div>
+					</div>
 				
 					<div class="col-lg-12 login-title">
 						Member Login
@@ -96,29 +111,17 @@ button{ background-color:#5E5966; color:white;}
 					<div class="col-lg-12 login-form">
 							<form>
 								<div class="form-group">
-<<<<<<< HEAD
-									<label class="form-control-label"> 사용자 ID </label>
-=======
-									<label class="form-control-label">User ID　</label>
->>>>>>> branch 'master' of https://github.com/jms9901/Card.git
-									<input type="text" class="form-control" maxlength="30">
+
+
+									<input type="text" class="form-control" maxlength="30" placeholder="USER ID">
 								</div>
 								
 								<div class="form-group">
-									<label class="form-control-label"> 비밀번호 </label>
-									<input type="password" class="form-control" maxlength="30">
-								</div>
-<<<<<<< HEAD
-												
-								<div class="col-lg-12 loginbttm">
-									<div class="col-lg-6 login-btm login-text">
-									<!-- 로그인 실패시  -->	[ ** ]
-									</div>
 									
-									<div class="col-lg-6 login-btm login-botton">
-										 <button type="submit" class="btn btn-outline-primary"> 로그인</button>
-									</div>
-=======
+									<input type="password" class="form-control" maxlength="30" placeholder="USER Password">
+								</div>
+
+
 								
 								<div class="form-group">				
 								
@@ -127,39 +130,23 @@ button{ background-color:#5E5966; color:white;}
 										</div>
 										
 										<div class="col-lg-6">
-											 <button type="submit" class="btn btn-outline-primary" style="padding: 10px 30px; color: black; margin: 15px;"> LOGIN</button>
+											 
+											  <a href="findid.jsp"> 아이디찾기 </a> 
+											  <a href="findpw.jsp"> 비밀번호찾기 </a>
+											 <button type="submit" class="btn btn-outline-primary" style="padding: 10px 30px;  margin: 15px;"> LOGIN</button>
 										</div>
-										
->>>>>>> branch 'master' of https://github.com/jms9901/Card.git
+
 									</div>	
-<<<<<<< HEAD
-									
-								<div class="col-lg-12 findbttm">
-									<div class="col-lg-6 find-btn find-id">
-										<button type="submit" class="btn btn-inline-primary"> 아이디 찾기 </button>
-									</div>
-									<div class="col-lg-6 find-btn find-pw">
-										<button type="submit" class="btn btn-inline-primary"> 비밀번호 찾기 </button>
-									
-									</div>
-								
-								</div>
-								
-								
-																	
-									
-=======
->>>>>>> branch 'master' of https://github.com/jms9901/Card.git
-								
+
 							</form>
-					
-						
+
 				</div>
 			</div>
 		</div>
 	</div>
 	
 	
+
 	
 </body>
 </html>

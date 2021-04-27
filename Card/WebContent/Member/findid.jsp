@@ -1,13 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+
 <title>Insert title here</title>
 <style>
 .findid-box{ margin-top: 100px;
-			height:350px;
+			padding : 30px;
 			background-color: #5E5966;
 			text-align: center;
 			box-shadow: 0 3px 6px balck;}
@@ -66,41 +66,53 @@ background-color:pink;
 .findid-btm{float: center; margin-top: 10px;}
 .findid-button{ margin-left:5px; margin-bottom: 30px; text-align: center; color:pink;}
 .findid-text{  text-align: center; font-weight:bold; color: pink;}
+
+
+input{
+	
+	height: 30px;
+	width: 250px;	
+}
+
+
+
 </style>
 </head>
 <body>
 
+<%@include file="../Main_jsp/header.jsp" %>
+
 <div class="container">
 	
 		<div class="row">
-			<div class= "col-lg-3 col-md-2"> </div> <!-- ∞¯πÈ -->
+			<div class= "col-lg-3 col-md-2"> </div> <!-- Í≥µÎ∞± -->
 				<div class = "col-lg-6 col-md-8 findid-box">
 					<div class="col-lg-12 findid-key">
 					<i class="fa fa-key" aria-hidden="true"></i>
 				</div>
 				
 					<div class="col-lg-12 findid-title">
-					 æ∆¿Ãµ √£±‚
+					 ÏïÑÏù¥Îîî Ï∞æÍ∏∞
 					</div>
 					<div class="col-lg-12 findid-form">
 							<form>
 								<div class="form-group">
-									<label class="form-control-label"> º∫«‘ </label>
-									<input type="text" class="form-control" maxlength="30">
+									
+									<input type="text" class="form-control" maxlength="30" placeholder="ÏÑ±Ìï®">
 								</div>
 								
 								<div class="form-group">
-									<label class="form-control-label"> ø¨∂Ù√≥ </label>
-									<input type="text" class="form-control" maxlength="30">
+									
+									<input type="text" class="form-control" maxlength="30" placeholder="Ïó∞ÎùΩÏ≤ò">
 								</div>
 												
 								<div class="col-lg-12 findidbttm">
 									<div class="col-lg-6 login-btm login-text">
-									<!-- ∑Œ±◊¿Œ Ω«∆–Ω√  -->	[ ** ]
+									<!-- Î°úÍ∑∏Ïù∏ Ïã§Ìå®Ïãú  -->	[ ** ]
 									</div>
 									
 									<div class="col-lg-6 findid-btm findid-botton">
-										 <button type="submit" class="btn btn-outline-primary"> æ∆¿Ãµ √£±‚ </button>
+										 <button type="submit"> ÏïÑÏù¥Îîî Ï∞æÍ∏∞ </button>
 									</div>
 									</div>	
 						

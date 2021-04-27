@@ -86,6 +86,8 @@
 	</style>
 	</head>
 	<body>
+	
+	<%@include file="../Main_jsp/header.jsp" %>
 		
 		<div class="container">
 		
