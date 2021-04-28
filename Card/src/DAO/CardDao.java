@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.util.ArrayList;
 
 import DTO.CardDto;
 
@@ -58,10 +59,46 @@ public class CardDao {
 			return 1;
 			
 		}catch (Exception e) {
-	
+			e.getMessage();
+			e.getStackTrace();
 		}
 		return -1;
 	}
+	
+	// 카드 조회
+	public ArrayList<CardDto> cardlist() {
 		
+		String sql = "select * from card";
+		
+		ArrayList<CardDto> list = new ArrayList<CardDto>();
+		
+		try {
+			
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+			
+			rs = pstmt.executeQuery();
+			
+			while(rs.next()) {
+				
+				CardDto dto = new CardDto(
+						rs.getString(2),
+						rs.getString(3),
+						rs.getInt(5),
+						rs.getString(6),
+						rs.getString(7)
+						);
+				
+				list.add(dto);
+				
+			}
+			
+			return list;
+			
+		}catch (Exception e) {
+			e.getMessage();
+			e.getStackTrace();
+		}
+		return list;
+	}
 
 }

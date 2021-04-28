@@ -16,7 +16,7 @@
 
 #nav {
 	width: 100%; /* width: auto%; */
-	background-color: white;
+	background-color: #F5F3F3;
 	position: fixed; /* 중요  fixed 하면 밑에 내용 짤림 밑에 내용 패딩값 적용 해야함*/
 	/*position: sticky; /* 중요 */
 	/*left: 0; /* 중요 */
@@ -51,11 +51,6 @@
 	display: inline-block;
 }
 
-#nav .dropdown3 {
-	position: relative;
-	display: inline-block;
-}
-
 #nav #nav_item1, #nav_item2, #login {
 	position: relative;
 	display: inline-block;
@@ -70,7 +65,7 @@
 
 #nav #dropbtn1 {
 	color: black;
-	background-color:white;
+	background-color: #F5F3F3;
 	border: none;
 	font-size: 15px;
 	transition: 0.4s;
@@ -78,19 +73,12 @@
 
 #nav #dropbtn2 {
 	color: black;
-	background-color:white;
+	background-color: #F5F3F3;
 	border: none;
 	font-size: 15px;
 	transition: 0.4s;
 }
 
-#nav #dropbtn3 {
-	color: black;
-	background-color:white;
-	border: none;
-	font-size: 15px;
-	transition: 0.4s;
-}
 
 #nav .dropdown-content {
 	display: none;
@@ -125,7 +113,7 @@
 	display: block;
 }
 
-#nav .dropdown1, .dropdown2, .dropdown3, #nav_item1, #nav_item2  {
+#nav .dropdown1, .dropdown2, #nav_item1, #nav_item2  {
 	margin: 0 50px 0 48px;
 }
 
@@ -134,8 +122,9 @@
 }
 
 #login button {
-	background-color: white;
+	background-color: #F5F3F3;
 	padding: 5px;
 	letter-spacing: 2px;
 	border: solid 1px lightgray;
+	border-radius: 10px;
 }

@@ -18,7 +18,7 @@
 		
 		<p id="footer_p2">
 			누구나 공감할 일상 속 카드소비 이야기<br>
-			매주 1회, 메가IT 뉴스레터가 찾아갑니다.
+			매주 1회, PEANUTS 뉴스레터가 찾아갑니다.
 		</p>
 		
 	</div>
@@ -33,10 +33,10 @@
 	
 		<div id="footer_ul">
 			<ul>
-				<li><a href="#"><img alt="" src="../images/youtube.png" width="50px" height="42px"></a></li>
-				<li><a href="#"><img alt="" src="../images/naver.png" width="45px" height="40px"></a></li>
-				<li><a href="#"><img alt="" src="../images/insta.jpeg" width="40px" height="40px"></a></li>
-				<li><a href="#"><img alt="" src="../images/kakao.png" width="40px" height="40px"></a></li>
+				<li><a href="#"><img alt="" src="../images/youtube.png" width="40px" height="37px"></a></li>
+				<li><a href="#"><img alt="" src="../images/naver.png" width="35px" height="35px"></a></li>
+				<li><a href="#"><img alt="" src="../images/insta.jpeg" width="30px" height="35px"></a></li>
+				<li><a href="#"><img alt="" src="../images/kakao.png" width="30px" height="35px"></a></li>
 			</ul>
 		</div>
 	

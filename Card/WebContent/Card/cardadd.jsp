@@ -71,7 +71,7 @@ function check() {
 
 	<h3>카드 등록</h3>
 	
-	<form name="form" method="post" enctype="multipart/form-data" action="cardaddcontroller.jsp" onsubmit="return check()">
+	<form name="form" method="post" enctype="multipart/form-data" action="cardaddcontroller.jsp">
 	
 		<table id="table_1">
 			<tr>
@@ -91,10 +91,10 @@ function check() {
 						<option value="신한카드">신한카드</option>
 						<option value="삼성카드">삼성카드</option>
 						<option value="우리카드">우리카드</option>
-						<option value="농협카드">농협카드</option>
+						<option value="NH농협카드">농협카드</option>
 						<option value="하나카드">하나카드</option>
 						<option value="씨티카드">씨티카드</option>
-						<option value="기업카드">기업카드</option>
+						<option value="IBK기업카드">기업카드</option>
 						<option value="현대카드">현대카드</option>
 						<option value="우체국">우체국</option>
 					</select>
@@ -130,7 +130,7 @@ function check() {
 			<tr>
 				<td>
 					<input type="button" value="취소" onclick="history.back()">
-					<input type="submit" value="완료">
+					<input type="submit" value="완료" onclick="return check()">
 				</td>
 			</tr>
 			

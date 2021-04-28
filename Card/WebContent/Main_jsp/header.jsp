@@ -29,18 +29,9 @@
 				</div>
 		</div>
 		
-		<div class="dropdown2">
-			<button id="dropbtn2">체크카드▽</button>
-				<div class="dropdown-content">
-					<a href="#">2_테스트1</a>
-					<a href="#">2_테스트2</a>
-					<a href="#">2_테스트3</a>
-					<a href="#">2_테스트4</a>
-				</div>
-		</div>
 		
-		<div class="dropdown3">
-			<button id="dropbtn3">카드사▽</button>
+		<div class="dropdown2">
+			<button id="dropbtn2">카드사▽</button>
 				<div class="dropdown-content">
 					<a href="#">국민카드</a>
 					<a href="#">롯데카드</a>
@@ -66,7 +57,7 @@
 		
 		<div id="login" style="margin-left: 68px;">
 			<button><a href="/Card/Member/login.jsp">로그인</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-			<a href="/Card/Member/signup.jsp">회원가입</a>
+			<button><a href="/Card/Member/signup.jsp">회원가입</a></button>
 		</div>
 </div>
 
@@ -79,14 +70,12 @@ function scrollFunction() {
 	    //document.getElementById("nav").style.padding = "10px 5px 15px 5px";
 	    document.getElementById("dropbtn1").style.fontSize = "12px";
 	    document.getElementById("dropbtn2").style.fontSize = "12px";
-	    document.getElementById("dropbtn3").style.fontSize = "12px";
 	    document.getElementById("nav_item1_a").style.fontSize = "12px";
 	    document.getElementById("nav_item2_a").style.fontSize = "12px";
 	  } else {
 	    document.getElementById("nav").style.padding = "10px 5px 20px 5px";
 	    document.getElementById("dropbtn1").style.fontSize = "15px";
 	    document.getElementById("dropbtn2").style.fontSize = "15px";
-	    document.getElementById("dropbtn3").style.fontSize = "15px";
 	    document.getElementById("nav_item1_a").style.fontSize = "15px";
 	    document.getElementById("nav_item2_a").style.fontSize = "15px";
 	  }

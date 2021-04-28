@@ -1,3 +1,7 @@
+<%@page import="java.text.DecimalFormat"%>
+<%@page import="DTO.CardDto"%>
+<%@page import="java.util.ArrayList"%>
+<%@page import="DAO.CardDao"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -14,6 +18,18 @@
 </head>
 <body>
 <%@include file="header.jsp" %>
+
+<% DecimalFormat df = new DecimalFormat("###,### 원"); %>
+
+<%
+
+	CardDao dao = CardDao.getinstance();
+
+	ArrayList<CardDto> list = new ArrayList<>();
+	
+	list = dao.cardlist();
+
+%>
 
 <div id="section">
 
@@ -70,82 +86,28 @@
 			
 			<ul class="ul1">
 			
+			<%
+				for(int i = 0; i < list.size(); i++) {
+					
+					CardDto dto = list.get(i);
+					
+			%>
+			
 				<li class="list_li">
 				
-					<a href="#"><img alt="" src="/Card/images/현대카드.png" width="150"></a>
+					<a href="#"><img alt="" src="/Card/card_upload/<%=dto.getImages() %>" width="150"></a>
 					
 					<div id="list_info">
-						<span class="company"><a href="#">현대카드</a></span>
-						<span class="name"><a href="#">블랙카드</a></span>
+						<span class="company"><a href="<%=dto.getBank_link() %>"><%=dto.getCard_company() %></a></span>
+						<span class="name"><a href="<%=dto.getBank_link() %>"><%=dto.getCard_name() %></a></span>
+						<span class="fee"><a href="<%=dto.getBank_link() %>"><%=dto.getMembership_fee() %></a></span>
 					</div>
 				
 				</li>
 				
-				<li class="list_li">
-				
-					<a href="#"><img alt="" src="/Card/images/현대카드.png" width="150"></a>
-					
-					<div id="list_info">
-						<span class="company"><a href="#">현대카드</a></span>
-						<span class="name"><a href="#">블랙카드</a></span>
-					</div>
-				
-				</li>
-				
-				<li class="list_li">
-				
-					<a href="#"><img alt="" src="/Card/images/현대카드.png" width="150"></a>
-					
-					<div id="list_info">
-						<span class="company"><a href="#">현대카드</a></span>
-						<span class="name"><a href="#">블랙카드</a></span>
-					</div>
-				
-				</li>
-				
-				<li class="list_li">
-				
-					<a href="#"><img alt="" src="/Card/images/현대카드.png" width="150"></a>
-					
-					<div id="list_info">
-						<span class="company"><a href="#">현대카드</a></span>
-						<span class="name"><a href="#">블랙카드</a></span>
-					</div>
-				
-				</li>
-				
-				<li class="list_li">
-				
-					<a href="#"><img alt="" src="/Card/images/현대카드.png" width="150"></a>
-					
-					<div id="list_info">
-						<span class="company"><a href="#">현대카드</a></span>
-						<span class="name"><a href="#">블랙카드</a></span>
-					</div>
-				
-				</li>
-				
-				<li class="list_li">
-				
-					<a href="#"><img alt="" src="/Card/images/현대카드.png" width="150"></a>
-					
-					<div id="list_info">
-						<span class="company"><a href="#">현대카드</a></span>
-						<span class="name"><a href="#">블랙카드</a></span>
-					</div>
-				
-				</li>
-				
-				<li class="list_li">
-				
-					<a href="#"><img alt="" src="/Card/images/현대카드.png" width="150"></a>
-					
-					<div id="list_info">
-						<span class="company"><a href="#">현대카드</a></span>
-						<span class="names"><a href="#">블랙카드</a></span>
-					</div>
-				
-				</li>
+			<%
+			}
+			%>
 				
 			</ul>
 			

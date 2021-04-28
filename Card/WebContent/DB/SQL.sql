@@ -15,7 +15,6 @@ create table Card(
 	membership_fee int not null,                 
 	images varchar(100),                         
 	bank_link varchar(1000) not null,           
-	foreign key (card_company) references Card_company (card_company)
 );
 
 
