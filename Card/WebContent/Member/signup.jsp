@@ -134,6 +134,10 @@
 										<input type="radio" class="form-control" maxlength="30" name="sex" value="wman"> 여자 </td>
 										</tr>
 										
+										<tr style="text-align: left;">
+										<td> <label class="form-control-label">[주민등록번호] * </label> </td>
+										<td><input type="text" class="form-control" maxlength="30" name="resdentnum"></td>
+										</tr>
 										
 										<tr style="text-align: left;">
 										<td> <label class="form-control-label">[연락처] * </label> </td>

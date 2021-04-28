@@ -32,20 +32,21 @@ public class MemberDao {
 	}
 	
 	public int signup( MemberDto dto) {
-		String SQL = "insert into member values(?,?,?,?,?,?,?,?)";
-		
+		String SQL = "insert into member(member_id,member_password,member_name,member_resdentnum,member_sex,member_phone,member_cardtype,member_cardcompany,member_cardbenefit)"+"value(?,?,?,?,?,?,?,?,?)";
 		try {
 			PreparedStatement pstmt = conn.prepareStatement(SQL);
 			pstmt.setString (1, dto.getMember_id());
 			pstmt.setString (2, dto.getMember_password());
 			pstmt.setString(3, dto.getMember_name());
-			pstmt.setString(4, dto.getMember_sex());
-			pstmt.setString(5, dto.getMember_phone());
-			pstmt.setString(6, dto.getMember_cardcompany());
-			pstmt.setString(7, dto.getMember_cardbenefit());
-			pstmt.setString(8, dto.getMember_cardtype());
+			pstmt.setInt(4, dto.getMember_resdentnum());
+			pstmt.setString(5, dto.getMember_sex());
+			pstmt.setString(6, dto.getMember_phone());
+			pstmt.setString(7, dto.getMember_cardcompany());
+			pstmt.setString(8, dto.getMember_cardbenefit());
+			pstmt.setString(9, dto.getMember_cardtype());
 			
 			pstmt.executeUpdate();
+			
 			return 1;
 		} catch (Exception e) {
 			// TODO: handle exception
