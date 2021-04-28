@@ -95,7 +95,7 @@
 			
 				<li class="list_li">
 				
-					<a href="#"><img alt="" src="/Card/card_upload/<%=dto.getImages() %>" width="150"></a>
+					<a href="#"><img alt="" src="/Card/card_upload/<%=dto.getImages() %>" width="200"></a>
 					
 					<div id="list_info">
 						<span class="company"><a href="<%=dto.getBank_link() %>"><%=dto.getCard_company() %></a></span>
