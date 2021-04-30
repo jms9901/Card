@@ -20,8 +20,9 @@ public class CompanyDao {
 
 				Class.forName("com.mysql.cj.jdbc.Driver"); // mysql 드라이버 연결
 
-				conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/card?serverTime=UTC", "root", "dnd941012");
-
+				conn = DriverManager.getConnection("jdbc:mysql://localhost:3307/card?serverTime=UTC", "root", "1234");
+				
+				System.out.println("연동성공");
 			} catch (Exception e) {
 				e.getMessage();
 				e.getStackTrace();
