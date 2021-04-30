@@ -1,3 +1,4 @@
+<%@page import="java.io.PrintWriter"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -95,6 +96,9 @@ button{ background-color:#5E5966; color:white;}
 <body>
 
 <%@include file="../Main_jsp/header.jsp" %>
+
+
+
 	
 	<div class="container">
 	
@@ -109,16 +113,16 @@ button{ background-color:#5E5966; color:white;}
 						Member Login
 					</div>
 					<div class="col-lg-12 login-form">
-							<form>
+							<form method="post" action="logincontroller.jsp">
 								<div class="form-group">
 
 
-									<input type="text" class="form-control" maxlength="30" placeholder="USER ID">
+									<input type="text" class="form-control" maxlength="30" placeholder="USER ID" name="id">
 								</div>
 								
 								<div class="form-group">
 									
-									<input type="password" class="form-control" maxlength="30" placeholder="USER Password">
+									<input type="password" class="form-control" maxlength="30" placeholder="USER Password" name="password">
 								</div>
 
 
@@ -126,7 +130,11 @@ button{ background-color:#5E5966; color:white;}
 								<div class="form-group">				
 								
 										<div class="col-lg-6">
-										<!-- 로그인 실패시  -->	[ ** ]
+										<% String cancel = request.getParameter("cancel");
+										if(cancel != null) {
+										%>
+									<!-- 로그인 실패시  -->	[로그인 실패] 회원정보가 없습니다
+									<%} %>
 										</div>
 										
 										<div class="col-lg-6">

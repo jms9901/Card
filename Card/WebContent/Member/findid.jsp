@@ -1,3 +1,5 @@
+<%@page import="Dao.MemberDao"%>
+<%@page import="Dto.MemberDto"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -95,21 +97,33 @@ input{
 					 아이디 찾기
 					</div>
 					<div class="col-lg-12 findid-form">
-							<form>
+							<form method="post" action="findidcontroller.jsp">
 								<div class="form-group">
 									
-									<input type="text" class="form-control" maxlength="30" placeholder="성함">
+									<input type="text" class="form-control" maxlength="30" placeholder="성함" name="name">
 								</div>
 								
 								<div class="form-group">
 									
-									<input type="text" class="form-control" maxlength="30" placeholder="연락처">
+									<input type="text" class="form-control" maxlength="30" placeholder="연락처" name="phone">
 								</div>
 												
 								<div class="col-lg-12 findidbttm">
 									<div class="col-lg-6 login-btm login-text">
-									<!-- 로그인 실패시  -->	[ ** ]
-									</div>
+									<% String cancel = request.getParameter("cancel");
+										if(cancel != null) {
+										%>
+									<!-- 로그인 실패시  -->	[아이디찾기 실패] 회원정보가 없습니다
+									<%} %>
+									
+									<% String find = request.getParameter("find");
+										if(find != null) {
+										%>
+									<!-- 아이디찾기 성공시  --> [아이디]	
+									<% MemberDto dto = new MemberDto();
+									
+									String result =  dto.getMember_id();
+									out.print(result);} %>									</div>
 									
 									<div class="col-lg-6 findid-btm findid-botton">
 										 <button type="submit"> 아이디 찾기 </button>

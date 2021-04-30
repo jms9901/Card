@@ -9,37 +9,37 @@ import DTO.CompanyDto;
 
 public class CompanyDao {
 	
-	// DAO : DB 접근 객체
+	// DAO : DB �젒洹� 媛앹껜
 
-	private Connection conn; // DB 연결 인터페이스
-	private ResultSet rs; // SQL 실행 후 결과 연결 인터페이스
+	private Connection conn; // DB �뿰寃� �씤�꽣�럹�씠�뒪
+	private ResultSet rs; // SQL �떎�뻾 �썑 寃곌낵 �뿰寃� �씤�꽣�럹�씠�뒪
 
 	public CompanyDao() {
 
 			try {
 
-				Class.forName("com.mysql.cj.jdbc.Driver"); // mysql 드라이버 연결
+				Class.forName("com.mysql.cj.jdbc.Driver"); // mysql �뱶�씪�씠踰� �뿰寃�
 
-				conn = DriverManager.getConnection("jdbc:mysql://localhost:3307/card?serverTime=UTC", "root", "1234");
+				conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/card?serverTime=UTC", "root", "7624");
 				
-				System.out.println("연동성공");
+				System.out.println("�뿰�룞�꽦怨�");
 			} catch (Exception e) {
 				e.getMessage();
 				e.getStackTrace();
 			}
 		}
 
-	// 다른 클래스에서 DB 사용하기 위한 객체 선언
+	// �떎瑜� �겢�옒�뒪�뿉�꽌 DB �궗�슜�븯湲� �쐞�븳 媛앹껜 �꽑�뼵
 	private static CompanyDao instance = new CompanyDao();
 
-	// DB 객체 반환 해주는 메소드
+	// DB 媛앹껜 諛섑솚 �빐二쇰뒗 硫붿냼�뱶
 	public static CompanyDao getinstance() {
 
 		return instance;
 
 	}
 	
-	// 카드사 등록 메소드
+	// 移대뱶�궗 �벑濡� 硫붿냼�뱶
 	public int companyadd(CompanyDto dto) {
 		
 		String sql = "insert into card_company values(?,?,?)";

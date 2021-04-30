@@ -1,6 +1,6 @@
+<%@page import="DTO.MemberDto"%>
+<%@page import="DAO.MemberDao"%>
 <%@page import="java.io.PrintWriter"%>
-<%@page import="Dao.MemberDao"%>
-<%@page import="Dto.MemberDto"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -10,8 +10,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-	
 	<%
 	request.setCharacterEncoding("UTF-8");
 	 
@@ -25,6 +23,7 @@
 	 int resdentnum = Integer.parseInt(request.getParameter("resdentnum"));
 	 
 	 String company = request.getParameter("company");
+	 
 	 String interset1 = request.getParameter("interset1");
 	 if( interset1 == null ) interset1="";
 	 String interset2 = request.getParameter("interset2");
@@ -66,17 +65,7 @@
 	 dto.setMember_cardbenefit(benefit);
 	 dto.setMember_cardtype(type);
 	 
-	 out.print( dto.getMember_id());
-	 out.print( dto.getMember_password());
-	 out.print( dto.getMember_name());
-	 out.print( dto.getMember_sex());
-	 out.print( dto.getMember_phone());
-	 out.print( dto.getMember_resdentnum());
-	 out.print( dto.getMember_cardcompany());
-	 out.print( dto.getMember_cardbenefit());
-	 out.print( dto.getMember_cardtype());
-	 
-	 
+
 	 
 	 
 	 MemberDao dao = MemberDao.getinstance();
@@ -96,7 +85,7 @@
 			
 			PrintWriter script =response.getWriter();
 			script.println("<script>");
-/* 			script.println("location.href ='/Card/Member/signup.jsp?cancel=1'"); */
+		script.println("location.href ='/Card/Member/signup.jsp?cancel=1'"); 
 			script.println("</script>");
 		}
 		

@@ -1,4 +1,6 @@
-	<%@ page language="java" contentType="text/html; charset=UTF-8"
+
+<%@page import="java.io.PrintWriter"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
 	    pageEncoding="UTF-8"%>
 	<!DOCTYPE html>
 	<html>
@@ -88,7 +90,8 @@
 	<body>
 	
 	<%@include file="../Main_jsp/header.jsp" %>
-		
+	
+	
 		<div class="container">
 		
 	
@@ -195,7 +198,11 @@
 	
 									<div class="col-lg-12 loginbttm">
 										<div class="col-lg-6 login-btm login-text">
-											<!-- 회원가입 실패시 실패시  -->	[ ** ]
+										<% String cancel = request.getParameter("cancle");
+										if(cancel !=null) {
+										%>	<!-- 회원가입 실패시  -->	[회원가입 실패] 동일한 아이디가 존재합니다
+										<%
+									} %>
 										</div>
 										
 										<div class="col-lg-6 login-btm login-botton" >

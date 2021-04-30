@@ -1,39 +1,18 @@
 package DTO;
 
 public class MemberDto {
-	
+
 	int member_point;
-	String member_id;
+	String member_id; 
 	String member_password;
 	String member_name;
 	int member_resdentnum;
 	String member_sex;
 	String member_birth;
 	String member_phone;
-	String member_cardbenefit;
-	String member_cardcompany;
 	String member_cardtype;
-	
-	
-	
-	public String getMember_cardbenefit() {
-		return member_cardbenefit;
-	}
-	public void setMember_cardbenefit(String member_cardbenefit) {
-		this.member_cardbenefit = member_cardbenefit;
-	}
-	public String getMember_cardcompany() {
-		return member_cardcompany;
-	}
-	public void setMember_cardcompany(String member_cardcompany) {
-		this.member_cardcompany = member_cardcompany;
-	}
-	public String getMember_cardtype() {
-		return member_cardtype;
-	}
-	public void setMember_cardtype(String member_cardtype) {
-		this.member_cardtype = member_cardtype;
-	}
+	String member_cardcompany;
+	String member_cardbenefit;
 	public int getMember_point() {
 		return member_point;
 	}
@@ -82,6 +61,24 @@ public class MemberDto {
 	public void setMember_phone(String member_phone) {
 		this.member_phone = member_phone;
 	}
-
+	public String getMember_cardtype() {
+		return member_cardtype;
+	}
+	public void setMember_cardtype(String member_cardtype) {
+		this.member_cardtype = member_cardtype;
+	}
+	public String getMember_cardcompany() {
+		return member_cardcompany;
+	}
+	public void setMember_cardcompany(String member_cardcompany) {
+		this.member_cardcompany = member_cardcompany;
+	}
+	public String getMember_cardbenefit() {
+		return member_cardbenefit;
+	}
+	public void setMember_cardbenefit(String member_cardbenefit) {
+		this.member_cardbenefit = member_cardbenefit;
+	}
+	
 
 }
